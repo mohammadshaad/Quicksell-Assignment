@@ -74,22 +74,22 @@ ticket-management-system/
 
 1. Clone the repository:
 ```sh
-    git clone https://github.com/mohammadshaad/Quicksell-Assignment.git
+git clone https://github.com/mohammadshaad/Quicksell-Assignment.git
 ```
 2. Navigate to the project directory:
 ```sh
-    cd Quicksell-Assignment
+cd Quicksell-Assignment
 ```
 3. Install the dependencies:
 ```sh
-    npm install
+npm install
 ```
 
 ### Running the Application
 
 To start the development server, run:
 ```sh
-    npm start
+npm start
 ```
 
 The application will be running at `http://localhost:3000`.
