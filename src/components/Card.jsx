@@ -3,11 +3,16 @@ import '../styles/card.css';
 import UserIcon from './UserIcon';
 import { LuMoreHorizontal } from 'react-icons/lu';
 import { getStatusIcon } from '../utils/helper';
-import TicketContext from '../context/TicketContext'; 
+import TicketContext from '../context/TicketContext';
+import NoPriority from '../assets/No-priority.svg';
+import LowPriority from '../assets/Img - Low Priority.svg';
+import MediumPriority from '../assets/Img - Medium Priority.svg';
+import HighPriority from '../assets/Img - High Priority.svg';
+import UrgentPriority from '../assets/SVG - Urgent Priority colour.svg';
 
 function Card({ ticket, hideStatusIcon, hideProfileIcon }) {
-  const { userData } = useContext(TicketContext);
-  
+  const { grouping, userData } = useContext(TicketContext);
+
   const user = userData[ticket.userId];
 
   return (
@@ -20,12 +25,32 @@ function Card({ ticket, hideStatusIcon, hideProfileIcon }) {
       </div>
       <div className='middle-container'>
         {!hideStatusIcon && getStatusIcon(ticket.status)}
-        <div className='title'>{ticket.title}</div>
+        <div className='title'>
+          {ticket.title.length > 30 ? `${ticket.title.slice(0, 50)}...` : ticket.title}
+        </div>
       </div>
       <div className='bottom-container'>
-        <div className='more-icon-container'>
-          <LuMoreHorizontal color="#797d84" />
-        </div>
+        {
+          (grouping == 'status' || grouping == 'user') &&
+          <div className='more-icon-container'>
+            {ticket.priority === 0 && (
+              <img src={NoPriority} alt='more-icon' />
+            )}
+            {ticket.priority === 1 && (
+              <img src={LowPriority} alt='more-icon' />
+            )}
+            {ticket.priority === 2 && (
+              <img src={MediumPriority} alt='more-icon' />
+            )}
+            {ticket.priority === 3 && (
+              <img src={HighPriority} alt='more-icon' />
+            )}
+            {ticket.priority === 4 && (
+              <img src={UrgentPriority} alt='more-icon' />
+            )}
+          </div>
+        }
+
         {ticket.tag.map((t) => (
           <div key={t} className='tag-container'>
             <div className='tag-icon'></div>
