@@ -89,7 +89,7 @@ ticket-management-system/
 
 To start the development server, run:
 ```sh
-npm start
+    npm start
 ```
 
 The application will be running at `http://localhost:3000`.
