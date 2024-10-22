@@ -19,7 +19,6 @@ function Grid({ gridData }) {
     
     if (grouping === 'priority') {
       return keys.sort((a, b) => {
-        // Handle cases where the key might not be in our priorityOrder
         const orderA = priorityOrder[a] !== undefined ? priorityOrder[a] : 999;
         const orderB = priorityOrder[b] !== undefined ? priorityOrder[b] : 999;
         return orderA - orderB;

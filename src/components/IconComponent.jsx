@@ -1,4 +1,3 @@
-// IconComponent.jsx
 import React from 'react';
 import NoPriorityImg from '../assets/No-priority.svg';
 import LowPriorityImg from '../assets/Img - Low Priority.svg';

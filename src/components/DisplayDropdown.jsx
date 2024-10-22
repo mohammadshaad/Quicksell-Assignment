@@ -1,7 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState, useContext } from 'react';
 import '../styles/displayDropdown.css';
-import { LuSettings2 } from 'react-icons/lu';
-import { BiChevronDown } from 'react-icons/bi';
 import TicketContext from '../context/TicketContext'; 
 import DisplayIcon from '../assets/Display.svg';
 import DownIcon from '../assets/down.svg';

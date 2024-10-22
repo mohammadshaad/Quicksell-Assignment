@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import '../styles/card.css';
 import UserIcon from './UserIcon';
-import { LuMoreHorizontal } from 'react-icons/lu';
 import { getStatusIcon } from '../utils/helper';
 import TicketContext from '../context/TicketContext';
 import NoPriority from '../assets/No-priority.svg';

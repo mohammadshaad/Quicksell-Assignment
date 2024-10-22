@@ -1,9 +1,3 @@
-import { BiRadioCircle } from "react-icons/bi";
-import { LuMoreHorizontal } from "react-icons/lu";
-import { TbProgress } from "react-icons/tb";
-import { IoCheckmarkDoneCircle } from "react-icons/io5";
-import { AiFillCloseCircle, AiFillWarning } from "react-icons/ai";
-import { BiSignal2, BiSignal3, BiSignal4 } from "react-icons/bi";
 import IconComponent from "../components/IconComponent";
 
 export const getPriorityIcon = (priority) => {
