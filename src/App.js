@@ -20,7 +20,7 @@ const Main = () => {
   return (
     <div className="App">
       <Header />
-      {loading ? <Loader /> : <Grid gridData={gridData} userIdToData={userData} />} 
+      {loading ? <Loader /> : <Grid gridData={gridData} />} 
     </div>
   );
 };

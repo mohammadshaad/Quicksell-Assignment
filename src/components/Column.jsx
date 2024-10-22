@@ -9,23 +9,23 @@ import TicketContext from '../context/TicketContext';
 
 function Column({ tickets, grouping, groupBy }) {
 
-    const { userIdToData } = useContext(TicketContext);
+    const { userData } = useContext(TicketContext);
 
     const title = useMemo(() => {
         if (grouping === 'status') return groupBy;
         if (grouping === 'priority') return groupBy;
-        if (grouping === 'user') return userIdToData[groupBy]?.name;
-    }, [grouping, groupBy, userIdToData]);
+        if (grouping === 'user') return userData[groupBy]?.name;
+    }, [grouping, groupBy, userData]);
 
     const icon = useMemo(() => {
         if (grouping === 'status') return getStatusIcon(groupBy);
         if (grouping === 'priority') return getPriorityIcon(groupBy);
         if (grouping === 'user') {
-            const user = userIdToData[groupBy];
+            const user = userData[groupBy];
             return user ? <UserIcon name={user.name} available={user.available} /> : null;
         }
-    }, [grouping, groupBy, userIdToData]);
-
+    }, [grouping, groupBy, userData]);
+    
     return (
         <div className='column'>
             <div className='column-header'>
