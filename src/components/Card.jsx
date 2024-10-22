@@ -8,7 +8,7 @@ import NoPriority from '../assets/No-priority.svg';
 import LowPriority from '../assets/Img - Low Priority.svg';
 import MediumPriority from '../assets/Img - Medium Priority.svg';
 import HighPriority from '../assets/Img - High Priority.svg';
-import UrgentPriority from '../assets/SVG - Urgent Priority colour.svg';
+import UrgentPriority from '../assets/SVG - Urgent Priority grey.svg';
 
 function Card({ ticket, hideStatusIcon, hideProfileIcon }) {
   const { grouping, userData } = useContext(TicketContext);

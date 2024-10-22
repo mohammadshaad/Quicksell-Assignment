@@ -8,7 +8,7 @@
   align-items: center;
   gap: 0.5rem;
   border-radius: 0.25rem;
-  padding: 0.25rem 0.5rem;
+  padding: 0.4rem 0.5rem;
   box-shadow: 0 0 0.2rem #12121242;
   background-color: #fff;
   cursor: pointer;
@@ -17,8 +17,6 @@
 .display-dropdown .dropdown-label {
   color: #282a2f;
   font-weight: bold;
-  position: relative;
-  right: 5px;
 }
 
 .display-dropdown .dropdown-content-container {
