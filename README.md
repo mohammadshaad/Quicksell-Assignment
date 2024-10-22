@@ -97,8 +97,8 @@ The application will be running at `http://localhost:3000`.
 
 ## Screenshots
 
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
-![alt text](image-4.png)
+![alt text](/public/screenshots/image.png)
+![alt text](/public/screenshots/image-1.png)
+![alt text](/public/screenshots/image-2.png)
+![alt text](/public/screenshots/image-3.png)
+![alt text](/public/screenshots/image-4.png)
