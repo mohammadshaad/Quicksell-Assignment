@@ -1,4 +1,18 @@
-# QuickSell Assignment By Mohammad Shaad - 21BCE1542
+# QuickSell Assignment 
+
+Made with ❤️ by [Mohammad Shaad - 21BCE1542](https://mohammadshaad.github.io/)
+
+## Table of Contents
+
+- [About the Project](#about-the-project)
+- [Deployed Application](#deployed-application)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running the Application](#running-the-application)
+
+## About the Project
 
 This project is a Ticket Management System built with React. It allows users to manage and organize tickets by different groupings such as status, priority, and user.
 
