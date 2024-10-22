@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import React, { useContext } from 'react';
+import Header from './components/Header';
+import Grid from './components/Grid';
+import Loader from './components/Loader';
 import './App.css';
+import { TicketProvider } from './context/TicketContext';  
+import TicketContext from './context/TicketContext'; 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TicketProvider> 
+      <Main />
+    </TicketProvider>
   );
 }
+
+const Main = () => {
+  const { loading, gridData, userData } = useContext(TicketContext); 
+
+  return (
+    <div className="App">
+      <Header />
+      {loading ? <Loader /> : <Grid gridData={gridData} userIdToData={userData} />} 
+    </div>
+  );
+};
 
 export default App;
