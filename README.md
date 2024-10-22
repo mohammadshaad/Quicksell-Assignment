@@ -11,6 +11,7 @@ Made with ❤️ by [Mohammad Shaad - 21BCE1542](https://mohammadshaad.github.io
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Running the Application](#running-the-application)
+- [Screenshots](#screenshots)
 
 ## About the Project
 
@@ -94,7 +95,7 @@ npm start
 
 The application will be running at `http://localhost:3000`.
 
-### Screenshots
+## Screenshots
 
 ![alt text](image.png)
 ![alt text](image-1.png)
