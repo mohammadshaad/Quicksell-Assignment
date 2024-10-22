@@ -26,7 +26,7 @@ function Card({ ticket, hideStatusIcon, hideProfileIcon }) {
       <div className='middle-container'>
         {!hideStatusIcon && getStatusIcon(ticket.status)}
         <div className='title'>
-          {ticket.title.length > 30 ? `${ticket.title.slice(0, 50)}...` : ticket.title}
+          {ticket.title.length > 50 ? `${ticket.title.slice(0, 50)}...` : ticket.title}
         </div>
       </div>
       <div className='bottom-container'>
