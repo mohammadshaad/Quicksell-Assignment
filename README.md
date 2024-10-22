@@ -78,7 +78,7 @@ ticket-management-system/
 ```
 2. Navigate to the project directory:
 ```sh
-    cd ticket-management-system
+    cd Quicksell-Assignment
 ```
 3. Install the dependencies:
 ```sh
