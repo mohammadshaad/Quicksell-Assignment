@@ -18,7 +18,7 @@ This project is a Ticket Management System built with React. It allows users to 
 
 ## Deployed Application
 
-The application is deployed on Vercel and can be accessed [https://shaad-quicksell-assignment.vercel.app/](https://shaad-quicksell-assignment.vercel.app/).
+The application is deployed on Vercel and can be accessed [here](https://shaad-quicksell-assignment.vercel.app/).
 
 ## Project Structure
 
