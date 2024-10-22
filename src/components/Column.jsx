@@ -1,11 +1,11 @@
 import React, { useMemo, useContext } from 'react';
 import Card from './Card';
 import '../styles/column.css';
-import { GrAdd } from 'react-icons/gr';
-import { LuMoreHorizontal } from 'react-icons/lu';
 import { getPriorityIcon, getStatusIcon } from '../utils/helper';
 import UserIcon from './UserIcon';
 import TicketContext from '../context/TicketContext'; 
+import ThreeDotMenu from '../assets/3 dot menu.svg';
+import AddIcon from '../assets/add.svg';    
 
 function Column({ tickets, grouping, groupBy }) {
 
@@ -37,8 +37,8 @@ function Column({ tickets, grouping, groupBy }) {
                     </div>
                 </div>
                 <div className='column-header-right-container'>
-                    <GrAdd color="#797d84" size={12} />
-                    <LuMoreHorizontal color="#797d84" size={14} />
+                    <img src={AddIcon} alt='add' />
+                    <img src={ThreeDotMenu} alt='more' />
                 </div>
             </div>
             <div className='cards-container'>

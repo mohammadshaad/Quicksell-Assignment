@@ -3,6 +3,7 @@ import '../styles/displayDropdown.css';
 import { LuSettings2 } from 'react-icons/lu';
 import { BiChevronDown } from 'react-icons/bi';
 import TicketContext from '../context/TicketContext'; 
+import Filter from '../assets/filter.png';
 
 function DisplayDropdown() {
   const [visible, setVisible] = useState(false);
@@ -35,7 +36,7 @@ function DisplayDropdown() {
   return (
     <div className='display-dropdown' ref={componentRef}>
       <div className='dropdown-label-container' onClick={openDropdown}>
-        <LuSettings2 color='#6b6f76' />
+        <img src={Filter} alt='filter' className='' width={30} height={30}/>
         <div className='dropdown-label'>Display</div>
         <BiChevronDown color='#6b6f76' />
       </div>
